@@ -23,6 +23,7 @@ cp hammer/*.lua ~/.hammerspoon
 
 - 上半屏 `⌘ Cmd + ⇧ Shift + Up`
 - 下半屏 `⌘ Cmd + ⇧ Shift + Down`
+
 ![上下分屏](./assets/half-h.jpg)
 
 ### 4 分屏
@@ -36,12 +37,15 @@ cp hammer/*.lua ~/.hammerspoon
 ### 3 分屏
 - 左 1/3 `⌘ Cmd + ⇧ Shift + ,`
 - 右 2/3 `⌘ Cmd + ⇧ Shift + /`
+
 ![左 1/3 右 2/3](./assets/left-1-3.jpg)
 
 
-- 左 2/3 `⌘ Cmd + ⇧ Shift + /`
+- 左 2/3 `⌘ Cmd + ⇧ Shift + :`
 - 右 1/3 `⌘ Cmd + ⇧ Shift + /`
+
 ![左 2/3 右 1/3](./assets/right-1-3.jpg)
 
 - 中间 1/3 `⌘ Cmd + ⇧ Shift + .`
+
 ![中间 1/3](./assets/m-1-3.jpg)
