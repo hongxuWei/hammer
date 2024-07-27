@@ -34,8 +34,6 @@ local SCREEN_KEY_MAP = {
   C = { x = 1/10, y = 1/10, w = 4/5, h = 4/5 }
 };
 
-local DEFAULT_ANIMATION_DURATION = 0;
-
 -- 快速布局 1/2, 1/3, 2/3, 1/4 屏幕
 for screenKey in pairs(SCREEN_KEY_MAP) do
   local resizeInfo = SCREEN_KEY_MAP[screenKey];
@@ -43,7 +41,7 @@ for screenKey in pairs(SCREEN_KEY_MAP) do
     local currentWindow = hs.window.focusedWindow();
     -- 如果当前屏幕是全屏则退出全屏
     if currentWindow:isFullScreen() then
-      currentWindow:setFullScreen(false)
+      currentWindow:setFullScreen(false);
     end
 
 
@@ -82,6 +80,7 @@ for _, screen in ipairs(screens) do
     if not (currentWindow:screen():id() == id) then
       if isFullScreen then
         currentWindow:setFullScreen(false);
+        os.execute("sleep 0.5");
       end
 
       currentWindow:moveToScreen(id, true, true);

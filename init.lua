@@ -9,5 +9,6 @@ if file then
     file:close()
 end
 
-require('reload-config');
+require("reload-config");
 require("screen");
+require("quick-search")
