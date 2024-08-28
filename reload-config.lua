@@ -9,4 +9,9 @@ function reloadConfig(files)
         hs.reload()
     end
 end
+
+hs.hotkey.bind({ "control", "cmd" }, 'R', function()
+  hs.reload();
+end);
+
 myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
